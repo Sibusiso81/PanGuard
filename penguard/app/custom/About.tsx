@@ -1,10 +1,10 @@
-
+import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
 function About() {
   return (
-    <section className="w-screen h-fit md:h-screen flex-col items-center justify-center p-10 space-y-24">
+    <section className="w-screen h-fit md:h-screen flex-col items-center justify-center p-10 lg:p-20 space-y-24">
         <div className="flex w-full max-w-7xl mx-auto items-center justify-center space-x-4">
           {/* Left box */}
           <div className="border-2 border-purple-600 flex items-center justify-center w-10 h-10">

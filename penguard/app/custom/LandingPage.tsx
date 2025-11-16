@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { AnimatePresence } from "framer-motion";
-import { ArrowDown, LucideIcon, Menu, Star, X } from "lucide-react";
-import AboutUsCards from "./AboutUsCards";
-import { LucideIconName } from "./DynamicLucideIcon";
+import {  Menu, X } from "lucide-react";
+
 import Footer from "./Footer";
 import About from "./About";
 import Service from "./Services";
@@ -35,10 +34,10 @@ function LandingPage() {
     description: "Full-featured, coordinated community response for your entire household.",
     features: [
       "Real-Time Navigation to Victim",
-      "Up to 8 Users per Subscription.pdf]",
+      "Up to 8 Users per Subscription",
       "Coordinated Backup ('I'm Going' Feature)",
       "Unlimited Proactive Risk Assessments (Chatbot)",
-      "Group Chat for Responders.pdf]"
+      "Group Chat for Responders"
     ],
     "idx": 1,
     "buttonText": "Get Started"
@@ -84,8 +83,8 @@ function LandingPage() {
         </div>
 
         {/* Text at bottom-left */}
-        <div className="absolute bottom-10 left-6 w-4/5 md:w-2/3">
-          <h1 className="text-purple-100 font-semibold font-inter text-3xl md:text-4xl leading-snug drop-shadow-lg">
+        <div className="absolute bottom-10 lg:bottom-32 left-6 w-4/5 md:w-2/3 lg:w-1/2">
+          <h1 className="text-purple-100 font-semibold font-inter text-3xl md:text-4xl lg:text-5xl leading-snug drop-shadow-lg">
             PanGuard turns your phone into a lifeline connecting you to
             trusted help instantly.
           </h1>
@@ -98,7 +97,7 @@ function LandingPage() {
       <About/>
       <Service/>
       <div className="space-y-10 p-6 md:p-10 ">
-         <div className="flex w-full max-w-7xl mx-auto items-center justify-center space-x-4">
+         <div className="flex w-full  mx-auto items-center justify-center space-x-4">
           {/* Left box */}
           <div className="border-2 border-purple-600 flex items-center justify-center w-10 h-10">
             <p className="font-semibold text-neutral-800">P</p>
