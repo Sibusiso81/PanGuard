@@ -38,11 +38,11 @@ const chartConfig = {
 
 export function ChartAreaStacked() {
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
-        <CardTitle>Area Chart - Stacked</CardTitle>
+        <CardTitle>Assult and Sexual Crime Trends</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          Showing trends from Q4 2024 - 2025
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -11,32 +11,33 @@ import {
   SidebarHeader,
   SidebarFooter,
 } from "@/components/ui/sidebar"
+import Image from 'next/image'
 
 const navigationItems = [
   {
     title: "Overview",
     icon: BarChart3,
-    url: "/dashboard",
+    url: "/Dashboard",
   },
   {
     title: "Crime Trends",
     icon: TrendingDown,
-    url: "#trends",
+    url: "/Dashboard/Crime-Trends",
   },
   {
     title: "Provincial Data",
     icon: MapPin,
-    url: "#provinces",
+    url: "/Dashboard/Provincial-Data",
   },
   {
     title: "Policy Insights",
     icon: FileText,
-    url: "#insights",
+    url: "/Dashboard/Policy-Insights",
   },
   {
-    title: "High-Risk Areas",
+    title: "Know-Before-You-Go",
     icon: AlertTriangle,
-    url: "#risk",
+    url: "/Dashboard/Know-Before-You-Go",
   },
 ]
 
@@ -45,10 +46,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar {...props}>
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <Shield className="h-6 w-6 text-primary-foreground" />
-          </div>
+          <Image height={20} width={50 } src={'/PenguardPurpleLogo.jpg'} alt='PanGuard-Dashboard-Logo' className='rounded-md'/>
           <div>
+            
             <p className="text-sm font-semibold">Pengard Analytics</p>
             <p className="text-xs text-muted-foreground">Crime Intelligence</p>
           </div>

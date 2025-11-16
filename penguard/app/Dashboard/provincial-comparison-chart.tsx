@@ -38,16 +38,16 @@ const chartConfig = {
   },
   current: {
     label: "current",
-    color: "var(--chart-2)",
+    color: "var(--chart-5)",
   },
 } satisfies ChartConfig
 
 export function ProvincialComparisonChart() {
   return (
-    <Card className="w-full md:w-1/2">
+    <Card className="w-full ">
       <CardHeader>
-        <CardTitle>Bar Chart - Multiple</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Provincial Crime Trends</CardTitle>
+        <CardDescription>Showing Crime trends across 9 Provinces</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -56,7 +56,7 @@ export function ProvincialComparisonChart() {
             <XAxis
               dataKey="province"
               tickLine={false}
-              tickMargin={10}
+              tickMargin={0}
               axisLine={false}
               tickFormatter={(value) => value.slice(0, 3)}
             />
